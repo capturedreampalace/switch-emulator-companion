@@ -1,0 +1,85 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e0f1a"/>
+      <stop offset="1" stop-color="#1a1c2e"/>
+    </linearGradient>
+    <linearGradient id="redGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff4d5e"/>
+      <stop offset="1" stop-color="#c9184a"/>
+    </linearGradient>
+    <linearGradient id="blueGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3ec6ff"/>
+      <stop offset="1" stop-color="#1f7fff"/>
+    </linearGradient>
+    <radialGradient id="screenGlow" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#4fd6ff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#4fd6ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="screenBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2c2f42"/>
+      <stop offset="1" stop-color="#171923"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+
+  <!-- faint tech grid -->
+  <g stroke="#3a3d55" stroke-width="1" opacity="0.25">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="200" y1="0" x2="200" y2="360"/>
+    <line x1="400" y1="0" x2="400" y2="360"/>
+    <line x1="600" y1="0" x2="600" y2="360"/>
+    <line x1="800" y1="0" x2="800" y2="360"/>
+    <line x1="1000" y1="0" x2="1000" y2="360"/>
+  </g>
+
+  <!-- ambient glow behind console -->
+  <ellipse cx="960" cy="180" rx="260" ry="200" fill="url(#screenGlow)"/>
+
+  <!-- Switch console silhouette, right side -->
+  <g transform="translate(760,90)">
+    <!-- left joycon -->
+    <rect x="0" y="0" width="60" height="180" rx="24" fill="url(#redGlow)"/>
+    <circle cx="30" cy="45" r="8" fill="#ffffff" opacity="0.85"/>
+    <rect x="14" y="80" width="32" height="10" rx="4" fill="#ffffff" opacity="0.6"/>
+    <circle cx="30" cy="130" r="6" fill="#ffffff" opacity="0.6"/>
+
+    <!-- screen body -->
+    <rect x="60" y="10" width="200" height="160" rx="14" fill="url(#screenBody)" stroke="#000000" stroke-width="2"/>
+    <rect x="76" y="26" width="168" height="128" rx="6" fill="#0b0d16"/>
+    <path d="M90 130 L120 90 L150 110 L180 60 L210 100 L230 80" stroke="#4fd6ff" stroke-width="4" fill="none" opacity="0.8"/>
+    <circle cx="90" cy="130" r="4" fill="#4fd6ff"/>
+    <circle cx="230" cy="80" r="4" fill="#4fd6ff"/>
+
+    <!-- right joycon -->
+    <rect x="260" y="0" width="60" height="180" rx="24" fill="url(#blueGlow)"/>
+    <circle cx="290" cy="45" r="8" fill="#ffffff" opacity="0.85"/>
+    <circle cx="290" cy="90" r="6" fill="#ffffff" opacity="0.6"/>
+    <circle cx="290" cy="115" r="6" fill="#ffffff" opacity="0.6"/>
+    <circle cx="290" cy="140" r="6" fill="#ffffff" opacity="0.6"/>
+  </g>
+
+  <!-- floating particles -->
+  <circle cx="640" cy="60" r="3" fill="#4fd6ff" opacity="0.7"/>
+  <circle cx="700" cy="300" r="4" fill="#ff4d5e" opacity="0.6"/>
+  <circle cx="1080" cy="60" r="3" fill="#ff4d5e" opacity="0.5"/>
+  <circle cx="1120" cy="280" r="3" fill="#4fd6ff" opacity="0.6"/>
+
+  <!-- accent side bar -->
+  <rect x="60" y="70" width="6" height="150" fill="url(#blueGlow)" opacity="0.9"/>
+
+  <text x="80" y="150" font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="64" fill="#f5f6fa">
+    <tspan x="80" dy="0" textLength="920" lengthAdjust="spacingAndGlyphs">Emulators Of</tspan>
+    <tspan x="80" dy="72" textLength="700" lengthAdjust="spacingAndGlyphs">Nintendo Switch</tspan>
+  </text>
+
+  <text x="80" y="270" font-family="'Segoe UI', Arial, sans-serif" font-size="22" fill="#a9adc4">
+    <tspan x="80" dy="0" textLength="1000" lengthAdjust="spacingAndGlyphs">Emulators of the Nintendo Switch, Nintendo's current eighth-generation console,</tspan>
+    <tspan x="80" dy="30" textLength="820" lengthAdjust="spacingAndGlyphs">have been in development since 2017 — led by projects like Yuzu and Ryujinx.</tspan>
+  </text>
+</svg>
